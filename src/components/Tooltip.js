@@ -7,7 +7,7 @@ const Tooltip = () => {
         <div >
             <h2 className="tooltip" onMouseEnter={() => { setShow(true) }} onMouseLeave={() => { setShow(false) }}>
                 Hover over me
-                <div>
+                <div className="tooltiptext">
                     {
                         show &&
                         "This is a tooltip"
@@ -17,7 +17,7 @@ const Tooltip = () => {
 
             <p className="tooltip" onMouseEnter={() => { setShowChild(true) }} onMouseLeave={() => { setShowChild(false) }}>
                 Hover over me to see another tooltip
-                <div>
+                <div className="tooltiptext">
                     {
                         showChild &&
                         "This is another tooltip"
