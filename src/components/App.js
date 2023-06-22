@@ -10,9 +10,7 @@ const App = () => {
       <Tooltip>
        
       </Tooltip>
-      {/* <Tooltip text='This is another tooltip'>
-       
-      </Tooltip> */}
+      
     </div>
   )
 }

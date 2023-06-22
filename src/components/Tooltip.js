@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
-const Tooltip = ({ text }) => {
+const Tooltip = () => {
     let [show, setShow] = useState(false)
     let [showChild, setShowChild] = useState(false)
     return (
         <div >
-            {/* {children} */}
             <h2 className="tooltip" onMouseEnter={() => { setShow(true) }} onMouseLeave={() => { setShow(false) }}>
                 Hover over me
                 {
