@@ -9,7 +9,7 @@ const Tooltip = () => {
                 Hover over me
                 {
                     show &&
-                    <div className="tooltiptext">This is a tooltip</div>
+                    <div>This is a tooltip</div>
                 }
             </h2>
 
@@ -17,7 +17,7 @@ const Tooltip = () => {
                 Hover over me to see another tooltip
                 {
                     showChild &&
-                    <div className="tooltiptext">This is another tooltip</div>
+                    <div>This is another tooltip</div>
                 }
             </p>
         </div>
