@@ -1,14 +1,26 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
-const Tooltip =  ({text, children})=>{
+const Tooltip = ({ text }) => {
     let [show, setShow] = useState(false)
-    return(
-        <div onMouseEnter={()=>{setShow(true)}} onMouseLeave={()=>{setShow(false)}}>
-            {children}
-            {
-                show && 
-                <div className="tooltiptext">{text}</div>
-            }
+    let [showChild, setShowChild] = useState(false)
+    return (
+        <div >
+            {/* {children} */}
+            <h2 className="tootip" onMouseEnter={() => { setShow(true) }} onMouseLeave={() => { setShow(false) }}>
+                Hover over me
+                {
+                    show &&
+                    <div className="tooltiptext">This is a tooltip</div>
+                }
+            </h2>
+
+            <p className="tootip" onMouseEnter={() => { setShowChild(true) }} onMouseLeave={() => { setShowChild(false) }}>
+                Hover over me to see another tooltip
+                {
+                    showChild &&
+                    <div className="tooltiptext">This is another tooltip</div>
+                }
+            </p>
         </div>
     )
 }
